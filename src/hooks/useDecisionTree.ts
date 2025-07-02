@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { loadTreeContent } from '../utils/contentLoader'
 import { DecisionTree } from '../types/DecisionTree'
-import {  SidebarContent } from '../types/Sidebar'
+import { SidebarContent } from '../types/Sidebar'
 
 export const useDecisionTree = (treeId: string) => {
   const [treeData, setTreeData] = useState<DecisionTree | null>(null)
